@@ -62,7 +62,7 @@ class VOCViewer:
 
 
         # Load image IDs
-        val_file = os.path.join("/Users/amiteshgangrade/Desktop/building_neural_net/t1_with_unknown_train.txt")
+        val_file = os.path.join("") #set your path for image ids
         with open(val_file, "r") as f:
             self.image_ids = [line.strip() for line in f.readlines()]
         print(self.image_ids)
@@ -135,7 +135,7 @@ class VOCViewer:
 # --- Run it ---
 if __name__ == "__main__":
     print("Running the tinker viewer...")
-    voc_base = "/Users/amiteshgangrade/Desktop/building_neural_net/VOCdevkit/VOC2012/"  # <- set your path
+    voc_base = ""  # <- set your path for annotations
     root = tk.Tk()
     root.title("Pascal VOC Viewer")
     app = VOCViewer(root, voc_base , grid_size=(2,2))
